@@ -6,6 +6,10 @@ const { validateQueryInput } = require('../middlewares/validator');
 const authMiddleware = require('../middlewares/auth');
 
 // Auth routes
+router.get('/health', (req, res) => {
+  res.status(200).json({ message: 'API is healthy' });
+});
+
 router.post('/signup', userController.signup);
 router.post('/login', userController.login);
 
