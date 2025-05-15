@@ -9,7 +9,7 @@ import {
   SchemaResponse
 } from '../types';
 
-const API_URL = 'http://localhost:3000/api'; // Replace with actual API URL
+const API_URL = 'https://coordlyai.onrender.com/api'; // Replace with actual API URL
 
 const getHeaders = (token?: string) => {
   const headers: Record<string, string> = {
